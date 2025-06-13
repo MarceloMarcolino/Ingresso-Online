@@ -1,6 +1,13 @@
 function comprar() {
     let tipo = document.getElementById('tipo-ingresso');
-    let qtd = parseInt(document.getElementById('qtd').value);
+    let qtdInput = document.getElementById('qtd');
+    let qtd = parseInt(qtdInput.value);
+
+    // Verificar se a quantidade é um número positivo
+    if (isNaN(qtd)  || qtd <= 0) {
+        alert('Por favor, insira uma quantidade válida.');
+        return;
+    }
 
     if(tipo.value == 'pista') {
         comprarPista(qtd);
