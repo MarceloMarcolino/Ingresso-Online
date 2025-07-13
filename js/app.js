@@ -62,7 +62,6 @@ let valorInteiro = converterParaInteiro(valorString);
 console.log(valorInteiro); // Saída esperada: 42
 
 // Desafio 3
-
 function adicao(a, b) {
     return a + b;
 }
@@ -101,3 +100,17 @@ function calculadora(operacao, a, b) {
 // Exemplo de uso
 let resultado = calculadora('soma', 5, 3);
 console.log(resultado); // Saída esperada: 8
+
+// Desafio 4
+function verificarParOuImpar(numero){
+    if (numero % 2 === 0) {
+        return "Par";
+    } else {
+        return "Ímpar";
+    }
+}
+
+// Exemplo de usso
+let numero = 7;
+let resultadoParOuImpar = verificarParOuImpar(numero);
+console.log(resultadoParOuImpar); // Saída esperada: Ímpar
